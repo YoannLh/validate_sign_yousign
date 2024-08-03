@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style_main.css" />
+  </head>
+  <body>
+    <main>
+      <div id="mainGreyBackground"></div>
+      <svg id="svg">
+        <defs>
+          <mask id="mask" x="0" y="0" width="100%" height="100%">
+            <rect id="overlay" x="0" y="0" width="100%" height="100%" />
+            <text id="text" x="50%" y="0" dy="50%">Yoann L'hostis</text>
+          </mask>
+        </defs>
+        <rect id="r" x="0" y="0" width="100%" height="100%" />
+      </svg>
+      <div id="containerDraggableAndCourse">
+        <div id="blackDynamicOverlay"></div>
+        <div id="draggable">
+          <div id="overlayButton"></div>
+          <img src="./img/chevron-right-solid.svg" alt="chevron" />
+        </div>
+        <div id="course">
+          <div id="greenOverlay"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="./main.js"></script>
+</html>

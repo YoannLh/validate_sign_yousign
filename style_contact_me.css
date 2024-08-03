@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Recoleta&display=swap');
+
+* {
+  font-family: 'Recoleta', sans-serif;
+}
+
+main {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+main section {
+  position: relative;
+  display: flex;
+  width: 600px;
+  height: 400px;
+  margin: auto;
+}
+
+#circleCheck {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  display: flex;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #5de8c1;
+  animation: circleAnimation 500ms forwards;
+}
+
+#circleCheck img {
+  height: 100px;
+  margin: auto;
+}
+
+@keyframes circleAnimation {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#containerButtons {
+  display: flex;
+  width: 100%;
+  margin: auto auto 0 auto;
+  z-index: 2;
+}
+
+#buttonContact {
+  display: flex;
+  width: 250px;
+  height: 70px;
+  margin: auto;
+  background: #5de8c1;
+  border: 0;
+  border-radius: 50px;
+  font-size: 1.1em;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  &:hover {
+    color: white;
+  }
+}
+
+#buttonContact2 {
+  display: flex;
+  width: 250px;
+  height: 70px;
+  margin: auto;
+  padding: 0 20px;
+  background: white;
+  border: 2px solid lightgray;
+  border-radius: 50px;
+  font-size: 1.1em;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  &:hover {
+    color: white;
+    background-color: lightgray;
+  }
+}
+
+#text {
+  position: absolute;
+  bottom: 0;
+  left: 80px;
+  font-size: 5em;
+  z-index: 1;
+  animation: textAnimation 500ms forwards;
+}
+
+@keyframes textAnimation {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+}
