@@ -28,8 +28,8 @@ document.addEventListener('mousemove', (e) => {
     greenOverlay.style.left =
       e.clientX - offsetX + POSITION_LEFT_GREEN_OVERLAY + 'px'
 
-    if (element.offsetLeft <= 0) {
-      element.style.left = 0 + 'px'
+    if (element.offsetLeft <= -7) {
+      element.style.left = -7 + 'px'
     }
 
     if (element.offsetLeft >= WIDTH_COURSE) {
